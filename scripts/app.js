@@ -1,3 +1,26 @@
+const profileSection = document.querySelector('#profile-section');
+
+for (let i = 0; i < 9; i++) {
+
+  const profileDiv = document.createElement('div');
+  profileDiv.classList.add('profile');
+  const profileImage = document.createElement('img');
+  profileImage.src = '';  // Set the source of the image here
+  profileImage.alt = 'profile';
+  const profileName = document.createElement('h1');
+  profileName.classList.add('profile-name');
+  const profileQuote = document.createElement('p');
+  profileQuote.classList.add('profile-quote');
+
+  profileDiv.appendChild(profileImage);
+  profileDiv.appendChild(profileName);
+  profileDiv.appendChild(profileQuote);
+
+  profileSection.appendChild(profileDiv);
+}
+
+
+
 function generateRandomProfileUrl() {
   const profileNumber = Math.floor(Math.random() * 70) + 1;
   return `https://i.pravatar.cc/150?img=${profileNumber}`;
@@ -40,3 +63,13 @@ function setNames () {
 
 setNames();
 
+profileQuote = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit fugit non hic. Praesentium quas accusantium consectetur consequatur cupiditate."
+
+function setQuotes() {
+  const quotes = document.querySelectorAll(".profile-quote");
+  quotes.forEach(quote => {
+    quote.textContent = profileQuote;
+  });
+}
+
+setQuotes();
