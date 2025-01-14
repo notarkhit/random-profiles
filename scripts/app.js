@@ -3,13 +3,6 @@ function generateRandomProfileUrl() {
   return `https://i.pravatar.cc/150?img=${profileNumber}`;
 }
 
-
-console.log(generateRandomProfileUrl());
-console.log(generateRandomProfileUrl());
-console.log(generateRandomProfileUrl());
-console.log(generateRandomProfileUrl());
-console.log(generateRandomProfileUrl());
-
 function replaceProfileImages() {
  
   const images = document.querySelectorAll('.profile img');

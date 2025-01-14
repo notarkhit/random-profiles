@@ -4,6 +4,11 @@ body {
   color: #ffffff;
 }
 
+#wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
 .profile{
   padding: 3em;
   text-align: justify;
