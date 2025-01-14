@@ -38,3 +38,5 @@ function setNames () {
   });
 }
 
+setNames();
+
