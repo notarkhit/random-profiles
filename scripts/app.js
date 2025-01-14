@@ -31,7 +31,6 @@ function replaceProfileImages() {
   const images = document.querySelectorAll('.profile img');
   images.forEach(image => {
     const randomUrl = generateRandomProfileUrl();
-    console.log(randomUrl); // Log the random URL
     image.src = randomUrl;
   });
 }
@@ -56,7 +55,6 @@ function setNames () {
   const names = document.querySelectorAll(".profile-name");
   names.forEach (name => {
     const randomName = getRandomName();
-    console.log(randomName);
     name.textContent = randomName;
   });
 }
