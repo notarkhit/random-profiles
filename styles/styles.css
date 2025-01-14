@@ -25,6 +25,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .profile{
@@ -34,4 +35,8 @@ body {
   margin: 1em;
   padding: 0.5em;
   text-align: justify;
+}
+
+@media screen {
+  
 }
