@@ -23,7 +23,7 @@ for (let i = 0; i < 12; i++) {
 
 function generateRandomProfileUrl() {
   const profileNumber = Math.floor(Math.random() * 70) + 1;
-  return `https://i.pravatar.cc/200?img=${profileNumber}`;
+  return `https://i.pravatar.cc/500?img=${profileNumber}`;
 }
 
 function replaceProfileImages() {

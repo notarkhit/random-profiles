@@ -13,6 +13,10 @@ body {
   font-weight: 900;
 }
 
+.profile img {
+  width: 200px;
+}
+
 .profile-name {
   font-family: 'poppins', Courier, monospace;
 }
@@ -37,6 +41,16 @@ body {
   text-align: justify;
 }
 
-@media screen {
-  
+@media screen and (max-width: 620px){
+  .profile{
+    width: 300px;
+    padding: 1em;
+    font-size: 1.2em;   
+  }
+
+  .profile img {
+    width: 300px;
+    margin: 0;
+  }
+
 }
