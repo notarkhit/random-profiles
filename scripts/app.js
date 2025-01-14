@@ -1,6 +1,6 @@
 const profileSection = document.querySelector('#profile-section');
 
-for (let i = 0; i < 9; i++) {
+for (let i = 0; i < 12; i++) {
 
   const profileDiv = document.createElement('div');
   profileDiv.classList.add('profile');
@@ -23,7 +23,7 @@ for (let i = 0; i < 9; i++) {
 
 function generateRandomProfileUrl() {
   const profileNumber = Math.floor(Math.random() * 70) + 1;
-  return `https://i.pravatar.cc/150?img=${profileNumber}`;
+  return `https://i.pravatar.cc/200?img=${profileNumber}`;
 }
 
 function replaceProfileImages() {
