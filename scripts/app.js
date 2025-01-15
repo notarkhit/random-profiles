@@ -4,6 +4,7 @@ for (let i = 0; i < 12; i++) {
 
   const profileDiv = document.createElement('div');
   profileDiv.classList.add('profile');
+  profileDiv.classList.add('hidden');
   const profileImage = document.createElement('img');
   profileImage.src = '';  // Set the source of the image here
   profileImage.alt = 'profile';
@@ -71,3 +72,19 @@ function setQuotes() {
 }
 
 setQuotes();
+
+
+// add scroll animation
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));
